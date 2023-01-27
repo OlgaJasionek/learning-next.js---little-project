@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -15,4 +17,9 @@ h4,
 h5,
 h6 {
   font-family: "Lato", sans-serif;
+}
+
+.center {
+  text-align: center;
+  margin: 15px;
 }
