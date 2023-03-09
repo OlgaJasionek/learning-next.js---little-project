@@ -1,4 +1,4 @@
-const DUMMY_EVENTS = [
+export const DUMMY_EVENTS = [
   {
     id: "e1",
     title: "Programming for everyone",
@@ -31,32 +31,32 @@ const DUMMY_EVENTS = [
   },
 ];
 
-export function getFeaturedEvents() {
-  return DUMMY_EVENTS.filter(event => event.isFeatured);
-}
+// // export function getFeaturedEvents() {
+// //   return DUMMY_EVENTS.filter(event => event.isFeatured);
+// // }
 
-export function getAllEvents() {
-  return DUMMY_EVENTS;
-}
+// export function getAllEvents() {
+//   return DUMMY_EVENTS;
+// }
 
-type FilterEventsProps = {
-  year: number;
-  month: number;
-};
+// type FilterEventsProps = {
+//   year: number;
+//   month: number;
+// };
 
-export function getFilteredEvents(dateFilter: FilterEventsProps) {
-  const { year, month } = dateFilter;
+// export function getFilteredEvents(dateFilter: FilterEventsProps) {
+//   const { year, month } = dateFilter;
 
-  let filteredEvents = DUMMY_EVENTS.filter(event => {
-    const eventDate = new Date(event.date);
-    return (
-      eventDate.getFullYear() === year && eventDate.getMonth() === month - 1
-    );
-  });
+//   let filteredEvents = DUMMY_EVENTS.filter(event => {
+//     const eventDate = new Date(event.date);
+//     return (
+//       eventDate.getFullYear() === year && eventDate.getMonth() === month - 1
+//     );
+//   });
 
-  return filteredEvents;
-}
+//   return filteredEvents;
+// }
 
-export function getEventById(id: any) {
-  return DUMMY_EVENTS.find(event => event.id === id);
-}
+// export function getEventById(id: any) {
+//   return DUMMY_EVENTS.find(event => event.id === id);
+// }
